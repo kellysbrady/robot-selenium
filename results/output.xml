@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.9.13 on win32)" generated="20230726 20:23:00.048" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot-Selenium" source="Q:\repos\robot-selenium">
+<suite id="s1-s1" name="Tests" source="Q:\repos\robot-selenium\tests">
+<suite id="s1-s1-s1" name="testDemo1" source="Q:\repos\robot-selenium\tests\testDemo1.robot">
+<test id="s1-s1-s1-t1" name="Validade Successful Login" line="6">
+<kw name="open the browser with the Mortgate payment url">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=/Q:/repos/robot-selenium/resources/chromedriver.exe</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230726 20:23:00.315" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230726 20:23:00.316" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230726 20:23:00.316" level="FAIL">TypeError: __init__() got an unexpected keyword argument 'executable_path'</msg>
+<status status="FAIL" starttime="20230726 20:23:00.315" endtime="20230726 20:23:00.319"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20230726 20:23:00.319" endtime="20230726 20:23:00.320"/>
+</kw>
+<status status="FAIL" starttime="20230726 20:23:00.314" endtime="20230726 20:23:00.320"/>
+</kw>
+<kw name="Fill the">
+<arg>login form</arg>
+<status status="NOT RUN" starttime="20230726 20:23:00.325" endtime="20230726 20:23:00.327"/>
+</kw>
+<kw name="wait until it checks and display error message">
+<status status="NOT RUN" starttime="20230726 20:23:00.333" endtime="20230726 20:23:00.335"/>
+</kw>
+<kw name="verify error message is correct">
+<status status="NOT RUN" starttime="20230726 20:23:00.343" endtime="20230726 20:23:00.346"/>
+</kw>
+<status status="FAIL" starttime="20230726 20:23:00.312" endtime="20230726 20:23:00.350">TypeError: __init__() got an unexpected keyword argument 'executable_path'</status>
+</test>
+<doc>To validate the Login form</doc>
+<status status="FAIL" starttime="20230726 20:23:00.087" endtime="20230726 20:23:00.352"/>
+</suite>
+<status status="FAIL" starttime="20230726 20:23:00.082" endtime="20230726 20:23:00.362"/>
+</suite>
+<status status="FAIL" starttime="20230726 20:23:00.052" endtime="20230726 20:23:00.364"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robot-Selenium">Robot-Selenium</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">Robot-Selenium.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="testDemo1">Robot-Selenium.Tests.testDemo1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
